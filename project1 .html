@@ -3,26 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> My Portfolio</title> 
+    <title> My Portfolio</title>
+    
     <style>
+    .button:hover {
+        background-color: #076fdf;
+    }
 
+    .button:active {
+        scale: 0.8;
+        transition: 0.2s;
+    }
     </style>
-
 </head>
 <header style="background-color: rgb(8, 8, 146) ;padding: 20px; color: aliceblue;">
-<h1 > <center>My Portfolio Website </center></h1>
-<p> <pre style="color: yellow; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">                          About    Skills    Projects   Contact</pre></p>
-
-</header><br> <br>
+<h1><center>My Portfolio Website </center></h1>
+<h2 style="text-align: center; cursor: ;">
+        <p>NAVIGATE</p>
+        <button class = "button"> About </button>
+        <button class="button" onclick="document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });"> Skills </button>
+        <button class = "button"> Projects </button>
+        <button class = "button"> Contact </button>
+    </h2>
+</header><br><br>
  
 <h2 style="color: green;"><u>About Me</u></h2> 
 <p>Hello! My name is <span style="color: red;">Deepanshu Dadhich</span>. I am learning <b>HTML</b> and <b>CSS.</b></p>
-    <img src="/polarismajeedsir.html/dishu_pic.jpg " alt="jo" width="300" height=""><br><br><br><br><br><br>
+<img src="https://github.com/rdomspace-bit/portfolio/blob/main/deepanshupfp.jpeg?raw=true" alt="PFP HERE" width="100" height="200"><br><br>
 
 <h2 style="color: green;"><u> My Skills</u></h2> 
 <ul>  
-    <li>
- <p>HTML Basics</p> </li>  
+    <li><p>HTML Basics</p> </li>  
 <li><p>CSS styling</p></li>
 <li><p>Javascripting (comming soon)</p></li>
 </ul><br>
@@ -51,8 +62,7 @@
 
 
     </table>
-
-
     <h3>Javascript is in progress <progress></progress></h3>
 </body>
+
 </html>
