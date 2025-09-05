@@ -3,63 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> My Portfolio</title>
-    
+    <title>My Portfolio</title>
     <style>
-    .button:hover {
-        background-color: #076fdf;
-    }
-
-    .button:active {
-        scale: 0.8;
-        transition: 0.2s;
-    }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: rgb(8, 8, 146); padding: 20px; color: aliceblue; text-align: center; }
+        .button { margin: 0 5px; padding: 8px 12px; cursor: pointer; background-color: #0a4fff; color: white; border: none; border-radius: 4px; }
+        .button:hover { background-color: #076fdf; }
+        .button:active { transform: scale(0.9); transition: 0.2s; }
+        section { padding: 20px; }
+        h2 { color: green; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        table, th, td { border: 2px solid black; padding: 8px; text-align: center; }
+        img { display: block; margin-top: 10px; }
     </style>
 </head>
-<header style="background-color: rgb(8, 8, 146) ;padding: 20px; color: aliceblue;">
-<h1><center>My Portfolio Website </center></h1>
-<h2 style="text-align: center; cursor: pointer">
-        <p>NAVIGATE</p>
-        <button class = "button"> About </button>
-        <button class="button" onclick="document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });"> Skills </button>
-        <button class = "button"> Projects </button>
-        <button class = "button"> Contact </button>
-    </h2>
-</header><br><br>
- 
-<h2 style="color: green;"><u>About Me</u></h2> 
-<p>Hello! My name is <span style="color: red;">Deepanshu Dadhich</span>. I am learning <b>HTML</b> and <b>CSS.</b></p>
-<img src="https://github.com/rdomspace-bit/portfolio/blob/main/deepanshupfp.jpeg?raw=true" alt="PFP HERE" width="100" height="200"><br><br>
-
-<h2 style="color: green;"><u> My Skills</u></h2> 
-<ul>  
-    <li><p>HTML Basics</p> </li>  
-<li><p>CSS styling</p></li>
-<li><p>Javascripting (comming soon)</p></li>
-</ul><br>
-
-
 <body>
-    <h2 style="color: green;"><u>My Projects</u></h2>
 
+<header>
+    <h1>My Portfolio Website</h1>
+    <div>
+        <button class="button">About</button>
+        <button class="button" onclick="document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });">Skills</button>
+        <button class="button">Projects</button>
+        <button class="button">Contact</button>
+    </div>
+</header>
 
-    <table border="4px">
-<th> <b>Project</b></th>
-<th> <b>Technology</b></th>
-<th> <b>Status</b></th>
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello! My name is <span style="color: red;">Deepanshu Dadhich</span>. I am learning <b>HTML</b> and <b>CSS</b>.</p>
+    <img src="https://github.com/rdomspace-bit/portfolio/blob/main/deepanshupfp.jpeg?raw=true" alt="PFP HERE" width="100" height="200">
+</section>
 
-<tr>
-    <td>Portfolio website</td>
-    <td>HTML,CSS</td>
-    <td>Completed</td>
-</tr>
-<tr>
-    <td>Calculator</td>
-    <td>Javascript</td>
-    <td>In Progress</td>
-</tr>
+<section id="skills">
+    <h2>My Skills</h2>
+    <ul>  
+        <li>HTML Basics</li>  
+        <li>CSS Styling</li>
+        <li>JavaScript (coming soon)</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <table>
+        <tr>
+            <th>Project</th>
+            <th>Technology</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Portfolio Website</td>
+            <td>HTML, CSS</td>
+            <td>Completed</td>
+        </tr>
+        <tr>
+            <td>Calculator</td>
+            <td>JavaScript</td>
+            <td>In Progress</td>
+        </tr>
     </table>
-    <h3>Javascript is in progress <progress></progress></h3>
-</body>
+    <h3>JavaScript Progress</h3>
+    <progress value="30" max="100"></progress>
+</section>
 
+</body>
 </html>
