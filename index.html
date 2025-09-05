@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; scroll-behavior: smooth; }
+        header { background-color: rgb(8, 8, 146); padding: 20px; color: aliceblue; text-align: center; position: sticky; top: 0; z-index: 1000; }
+        .button { margin: 0 5px; padding: 8px 12px; cursor: pointer; background-color: #0a4fff; color: white; border: none; border-radius: 4px; transition: 0.2s; }
+        .button:hover { background-color: #076fdf; }
+        .button:active { transform: scale(0.9); }
+        section { padding: 40px 20px; max-width: 900px; margin: auto; }
+        h2 { color: green; margin-top: 0; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        table, th, td { border: 2px solid black; padding: 8px; text-align: center; }
+        img { display: block; margin: 10px auto; max-width: 100%; height: auto; border-radius: 10px; }
+        ul { list-style-type: disc; margin-left: 20px; }
+        progress { width: 100%; height: 20px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio Website</h1>
+    <div>
+        <button class="button" onclick="document.getElementById('about').scrollIntoView();">About</button>
+        <button class="button" onclick="document.getElementById('skills').scrollIntoView();">Skills</button>
+        <button class="button" onclick="document.getElementById('projects').scrollIntoView();">Projects</button>
+        <button class="button" onclick="document.getElementById('contact').scrollIntoView();">Contact</button>
+    </div>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello! My name is <span style="color: red;">Deepanshu Dadhich</span>. I am learning <b>HTML</b> and <b>CSS</b>.</p>
+    <img src="https://github.com/rdomspace-bit/portfolio/blob/main/deepanshupfp.jpeg?raw=true" alt="Deepanshu's Profile Picture" width="200" height="200">
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <ul>  
+        <li>HTML Basics</li>  
+        <li>CSS Styling</li>
+        <li>JavaScript (coming soon)</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <table>
+        <tr>
+            <th>Project</th>
+            <th>Technology</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Portfolio Website</td>
+            <td>HTML, CSS</td>
+            <td>Completed</td>
+        </tr>
+        <tr>
+            <td>Calculator</td>
+            <td>JavaScript</td>
+            <td>In Progress</td>
+        </tr>
+    </table>
+    <h3>JavaScript Progress</h3>
+    <progress value="30" max="100"></progress>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>You can reach me at: <a href="mailto:deepanshu@example.com">deepanshu@example.com</a></p>
+</section>
+
+</body>
+</html>
